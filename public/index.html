@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudBud Home</title>
+    <link rel="stylesheet" href="scss/main.scss">
+    <!--Fonts + Icons-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+
+
+
+ </head>
+ <body>
+  <!--Container for CSS Grid--> 
+    <div class="container">
+      <!-- Navigation bar that appears on the left side of the screen when on Desktop, 'Quick Access' will replace the nav bar on
+      mobile screens to prevent clutter -->
+        <div class="NAV">
+          <ul> SB
+            <!-- Each LI element contains a span/button that will hold the link to the other pages -->
+            <li><span class="material-symbols-outlined">
+              <a href="index.html">home</a>
+              </span></li>
+          
+            <li><span class="material-symbols-outlined">
+            <a href="timers.html">watch</a>
+            </span></li>
+
+            <li><span class="material-symbols-outlined">
+              <a href="timers.html">timer</a>
+              </span></li>
+
+              <li><span class="material-symbols-outlined">
+                <a href="readinglist.html">collections_bookmark</a>
+                </span></li>
+
+                  <li><span class="material-symbols-outlined">
+                    <a href="kanban.html">checklist</a>
+                    </span></li>
+
+                    
+          </ul>
+        </div>
+
+     <!-- Welcome element for CSS grid to access -->
+        <div class="welcome">
+          <h1>Welcome, <strong>User</strong></h1>
+          <h4>It's a new day!</h4>
+        </div>
+        <div class="quick-access">
+          <h3>Quick Access</h3>
+
+       <!-- This div holds all the application buttons that will link to the other pages -->
+        <div class="app-container">
+          <div class="task-category">
+          <h6>ORGANISE TASKS</h6>
+
+          
+            <span class="Kanban">
+              <a id="kanbanurl" href="kanban.html">Kanban</a>
+            </span>
+  
+            
+          </div>
+
+          <div class="time-category">
+          <h6>TIME</h6>
+
+          <span class="stopwatch-button">
+            <a href="timers.html">
+            Stopwatch
+          </a>
+          </span>
+
+          <span class="pomodoro-button">
+            <a href="timers.html">
+              Pomodoro
+            </a>
+          </span>
+        </div>
+
+        <div class="misc-category">
+          <h6>MISCELLANEOUS</h6>
+          <span class="reading-list">
+            <a href="readinglist.html">
+            Reading List
+          </a>
+          </span>
+
+        
+      </div>
+    </div>
+  </div>
+
+     <!-- Task container for CSS grid -->
+        <div class="task-container">
+          <!-- Form for user to fill out task details -->
+          <form id="task-form">
+            <!-- User selects task name -->
+            <input type="text" name= "text" id="textinput" placeholder="What's on today" required>
+            <h5>PRIORITY</h5>
+            <!-- User selects priority -->
+            <select name="priority" id="priorityInput">
+              <option value="">Select one</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+              <option value="Urgent">Urgent</option>
+          </select>
+     <!-- User selects due date -->
+        <div class="task-list-divider">
+          <div class="due-date-divider">
+            <h5>DUE DATE</h5>
+            <input type="date" id="inputduedate">
+          </div>
+<!-- User selects completion date -->
+          <div class="completion-time-divider">
+            <h5>COMPLETION DATE</h5>
+            <input type="date" id="inputtime">
+            </div>
+
+            <!-- User selects estimated minutes until completion -->
+            <div class="estimated-time">
+              <h5>ESTIMATED MIN TO COMPLETE</h5>
+              <input type="number" id="inputcomplete" placeholder="Enter estimated minutes to complete">
+            </div>
+          </div>
+          <!-- User submits the form which will then be converted into an object using javascript -->
+          <button id="submitform" type="submit">Confirm</button>
+          </form>
+
+   <div class="tasklist-container">
+    <hr class="solid">
+    <h3>Current Tasks</h3>
+
+   <!-- Task list to hold the tasks -->
+     <div id="tasklist">
+      <ul>
+        <!-- Javascript will create the <li> elements -->
+      </ul>
+  </div>
+</div>
+</div>
+<!-- Music div for CSS grid -->
+<div class="music">
+  <div class="music-player">
+   <h3>Wanna listen to some music?</h3>
+   <!-- Declare audio file -->
+   <audio src="audio_files/Missing You.mp3" id="audiofile"></audio>
+   <!-- Buttons to start/stop which will be coded in javascript -->
+   <button id="play"><span class="material-symbols-outlined">
+    play_arrow
+    </span></button>
+   <button id="pause"><span class="material-symbols-outlined">pause</span></button>
+   
+   <!-- Song details -->
+   <div class="song-det">
+     <h4 class="song-name"></h4>
+     <p class="artist-name"></p>
+
+   </div>
+
+  </div>
+</div>
+
+
+      
+
+
+
+
+<!-- Declare .js files here to improve performance and also due to an error popping up when declaring the files in the head tag -->
+     <script src="music.js"></script>
+    <script src="tasklist.js"></script>
+ </body>

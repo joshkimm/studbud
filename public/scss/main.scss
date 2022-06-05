@@ -1,0 +1,1004 @@
+// Import additional CSS files
+@import "reset.scss";
+@import "typography.scss";
+
+//Universal styling
+body {
+    background-color: white;
+    font-family: 'DM Sans', sans-serif;
+    margin: 3em;
+}
+
+h4 {
+  font-weight: 400px;
+}
+  
+//TIMERS
+.doc-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.timer-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.heading-tag h1, p {
+  color: #2F375D;
+}
+
+.heading-tag p {
+  margin-bottom: 1rem;
+}
+
+#Stopwatch h2{ 
+  color: #485696;
+}
+
+.heading-tag h2{
+  color: #485696;
+}
+
+.stopwatch-container {
+  background-color: #6D72E6;
+  color: white;
+  padding: 4em;
+  text-align: center;
+  border-radius: 25px;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25);
+  margin-bottom: 2rem;
+}
+
+#Stopwatch h4 {
+  font-weight: 100;
+}
+
+#Stopwatch button {
+  color: #5659af;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25);
+  cursor: pointer;
+  opacity: 60%;
+  transition: 0.05s ease-in-out;
+}
+
+#Stopwatch button:hover {
+  opacity: 100%;
+}
+//POMODORO TIME
+
+#pomo-container {
+  background-color: rgb(249, 199, 132);
+  border-radius: 25px;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 1em;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25);
+}
+
+#pomo-container h2 {
+  color:rgb(72, 86, 150);
+  padding: 1em 0.5em 0.5em 0;
+}
+
+
+
+.pomo-customise {
+  background-color: rgb(72, 86, 150);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.pomo-customise h4 {
+  padding: 1em;
+  color:rgb(249, 199, 132);
+}
+
+.display-time {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: rgb(72, 86, 150);
+}
+
+.pomo-actions button{
+  margin: 0.5em 0 0.5em 1em;
+  color: #5659af;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25);
+  cursor: pointer;
+  opacity: 60%;
+  transition: 0.05s ease-in-out;
+}
+
+.pomo-actions button:hover{
+  opacity: 100%;
+}
+
+.pomo-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pomo-start {
+  height: 4.5em;
+  width: 4.5em;
+  border-radius: 10px;
+  margin-right: 2em;
+
+}
+
+.pomo-pause {
+  height: 4.5em;
+  width: 4.5em;
+  border-radius: 10px;
+  margin-right: 2em;
+}
+
+.pomo-reset {
+  height: 4.5em;
+  width: 4.5em;
+  border-radius: 50px;
+  margin-right: 2em;
+
+}
+
+#pomo-container h3{
+  color: rgb(72, 86, 150);
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+
+
+}
+
+#pomo-container h5 {
+  font-weight: 100;
+  padding-left: 50px;
+}
+
+#study-clock {
+  display: flex;
+  justify-content: center;
+  color: rgb(72, 86, 150);
+  font-size: 20px;
+  font-weight: 700;
+}
+#break-clock {
+  display: flex;
+  justify-content: center;
+  color: rgb(72, 86, 150);
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#study-label.removed {
+  transform: scale(0);
+}
+
+#clocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pomo-options p{
+ background-color: rgb(72, 86, 150);
+ box-shadow:0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25);
+ color:rgb(249, 199, 132);
+ padding: 1.5em;
+ margin-bottom: 0.5em;
+ border-radius: 10px;
+ text-align: center;
+}
+
+.pomo-heading {
+  padding: 1rem;
+  font-weight: 100;
+  color: #2F375D;
+
+}
+
+
+
+//KANBAN 
+#create-column h4 {
+  color: rgb(249, 199, 132);
+  font-weight: 100;
+}
+
+#kanban {
+  background-color: rgb(72, 86, 150);
+  padding: 1em;
+  border-radius: 25px;
+  color:rgb(249, 199, 132);
+  display: flex;
+}
+
+
+.kanban-column {
+  flex: 1;
+}
+
+.kanban-column:not(:last-child) {
+  margin-right: 40px;
+}
+
+.column-title {
+  margin: 1em 0.5em 1em 0.5em;
+  font-size: 20px;
+}
+
+.column-item {
+  padding: 0.5em;
+  box-sizing: border-box;
+  background-color:rgb(249, 199, 132);
+  color:rgb(72, 86, 150);
+  border-radius: 10px;
+}
+
+.add-item button{
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.75em;
+  border-radius: 10px;
+  border: none;
+  color:rgb(72, 86, 150);
+  opacity: 75%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.add-item button:hover {
+  opacity:100%;
+}
+
+
+//Index.html/Home page styling
+.container {
+  display: grid; 
+  grid-template-columns: 0.6fr 1.2fr 1.2fr 1fr 1fr 1fr; 
+  grid-template-rows: 0.4fr 0.4fr 2.3fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "NAV Welcome Welcome Music Music Music"
+    "NAV Quick-Access Quick-Access Music Music Music"
+    "NAV Quick-Access Quick-Access Task-List Task-List Task-List"
+    ". Quick-Access Quick-Access Task-List Task-List Task-List"
+    ". . . Task-List Task-List Task-List"; 
+}
+.NAV { 
+  grid-area: NAV;
+  display: flex;
+  background-color: #2F375D;
+  padding: 0.75rem;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 20px;
+  box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+}
+
+//Navigation bar styling
+.NAV li{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.NAV a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.NAV a:active {
+  text-decoration: none;
+  color: white;
+}
+
+
+//Welcome heading
+
+.welcome { 
+  grid-area: Welcome; 
+  margin-left: 2rem;
+  color: #485696;
+  font-weight: 100;
+}
+
+.welcome h4 {
+  color: gray;
+  font-weight: 100;
+}
+
+.welcome h1 {
+  font-size: 40px;
+  filter: drop-shadow(2px 5px 6px rgba(72, 86, 150, 0.27));
+
+//Quick Access 
+}
+.quick-access { 
+  grid-area: Quick-Access; 
+  margin-left: 2rem;
+  height: 40%;
+}
+
+.app-container {
+  margin-top: 0.2rem;
+}
+
+.app-container h6 {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+}
+
+.time-category {
+  margin-top: 3rem;
+}
+
+.misc-category {
+  margin-top: 3rem;
+}
+
+
+//Styling for the buttons in Quick Access
+.Kanban {
+  background-color: #ffc5c1;
+  padding: 2rem;
+  margin-right: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 6.0px 10.0px 16.0px rgba(171, 104, 104, 0.25);
+  opacity: 60%;
+  cursor: pointer;
+  transition: 0.05s ease-in-out;
+  text-decoration: none;
+}
+
+
+.Kanban a {
+  text-decoration: none;
+  color: #485696;
+}
+
+.Kanban a:visited {
+  text-decoration: none;
+  color: #485696;
+}
+
+.Kanban:hover {
+  opacity: 100%;
+}
+
+
+.pomodoro-button {
+  background-color: #c5e0ff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 6.0px 10.0px 16.0px #add2fd(104, 160, 171, 0.25);
+  opacity: 60%;
+  cursor: pointer;
+  transition: 0.05s ease-in-out;
+}
+
+.pomodoro-button a {
+  text-decoration: none;
+  color: #485696;
+}
+
+.pomodoro-button a:visited {
+  text-decoration: none;
+  color: #485696;
+}
+.pomodoro-button:hover {
+  opacity: 100%;
+}
+
+.stopwatch-button {
+  background-color: #c5e0ff;
+  padding: 2rem;
+  margin-right: 1rem;
+  border-radius: 20px;
+  box-shadow: 6.0px 10.0px 16.0px #add2fd(104, 160, 171, 0.25);
+  opacity: 60%;
+  cursor: pointer;
+  transition: 0.05s ease-in-out;
+}
+
+.stopwatch-button a {
+  text-decoration: none;
+  color: #485696;
+}
+
+.stopwatch-button a:visited {
+  text-decoration: none;
+  color: #485696;
+}
+.stopwatch-button:hover {
+  opacity: 100%;
+}
+
+.reading-list {
+  background-color: #CAE7A3;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+  margin-right: 1rem;
+  opacity: 60%;
+  cursor: pointer;
+  transition: 0.05s ease-in-out;
+}
+
+.reading-list a {
+  text-decoration: none;
+  color: #485696;
+}
+
+.reading-list a:visited {
+  text-decoration: none;
+  color: #485696;
+}
+.reading-list:hover {
+  opacity: 100%;
+}
+
+//Styling for music
+
+.music {
+  background-color: #485696;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+  color: white;
+  opacity: 60%;
+  transition: 0.05s ease-in-out;
+}
+
+.music:hover{
+  opacity: 100%;
+}
+
+.music-player {
+  padding: 1rem;
+}
+
+.music button {
+  border-radius:100%;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 1rem;
+  
+
+}
+
+.music-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  width: 60%;
+  padding: 1rem;
+  background-color: #CAE7A3;
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  box-shadow: 8.0px 16.0px 16.0px hsla(0, 0%, 0%, 0.25);
+  display: flex;
+  justify-content: space-between;
+}
+
+.music span {
+  color: #485696;
+  background-color: white;
+  border-radius: 25px;
+  padding: 0.5rem;
+}
+.song-name, .artist-name {
+  margin-top: 0.5rem;
+  color:white;
+}
+.song-name {
+  font-style: italic;
+}
+
+
+
+.quick-access h3 {
+  font-weight: 100;
+  color: #485696;
+  font-size: 20px;
+}
+
+//Task list styling
+.task-container { 
+  padding: 2rem;
+  grid-area: Task-List; 
+  background-color: #6D72E6;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25);
+
+}
+
+.task-list-divider {
+  display: flex;
+  justify-content: space-between;
+}
+
+#textinput {
+  border: none;
+  padding: 1rem;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25);
+
+}
+
+#priorityInput {
+  border: none;
+  padding: 1rem;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25);
+
+}
+
+#inputduedate {
+  border: none;
+  padding: 0.25rem;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25);
+
+}
+
+#inputtime {
+  border: none;
+  padding: 0.25rem;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25);
+
+}
+
+#inputcomplete {
+  border: none;
+  padding: 0.25rem;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25);
+
+}
+
+
+#task-form h5 {
+  color: white;
+  font-size: 15px;
+}
+
+#submitform {
+  margin-top: 2rem;
+  border: none;
+  background-color: #2F375D;
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 20%;
+  color: white;
+  box-shadow: 8.0px 16.0px 16.0px rgba(31, 14, 91, 0.25);;
+}
+
+.task-container li {
+  background-color: #c5e0ff;
+  border-radius: 20px;
+  list-style: none;
+  padding: 1rem;
+  margin-right: 1rem;
+  box-shadow: 8.0px 16.0px 16.0px rgba(31, 14, 91, 0.25);;
+
+}
+
+.remove{
+  margin-top: 2rem;
+  border: none;
+  background-color: #2F375D;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+  box-shadow: 8.0px 16.0px 16.0px rgba(31, 14, 91, 0.25);;
+  opacity: 60%;
+  transition: 0.05s ease-in-out;
+  cursor: pointer;
+}
+
+.remove:hover {
+  opacity: 100%;
+}
+
+
+
+
+
+.tasklist-container h3 {
+  margin-top: 1rem;
+  color: white;
+}
+
+.solid {
+  border-top: 1px solid #5659af;
+  border: none;
+}
+
+//Kanban board styling
+
+.managetaskheading {
+  color: #485696;
+  margin: 0.5rem;
+}
+
+.tasklistheading {
+  color: #485696;
+  margin: 0.5rem 0.5rem 1rem 0rem;
+}
+
+.kanbandoccontainer {
+  margin-top: 3rem;
+}
+
+.kanbanheading {
+  color: #485696;
+}
+
+.kanbandoccontainer p {
+  margin-bottom: 1rem;
+}
+
+.inputkanban  {
+  padding: 0.75rem;
+  border: none;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25) ;
+  border-radius: 10px;
+}
+
+.taskbtn, .colbtn {
+  padding: 0.75rem;
+  margin-left: 2rem;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background-color:#5659af;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25) ;
+  opacity: 60%;
+  transition: 0.05s ease-in-out;
+  cursor:pointer;
+}
+
+.taskbtn:hover, .colbtn:hover {
+  opacity: 100%;
+}
+
+.k-board {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  width: auto;
+  }
+
+.draggable {
+  background-color: #add2fd;
+  width: 70%;
+  color: #5659af;
+  padding: 2rem;
+  border-radius: 50px;
+  cursor: move;
+  margin-bottom: 1rem;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
+}
+
+.k-container {
+  background-color: #5659af;
+  height: 100%;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  
+}
+.k-container h3{
+  color: white;
+}
+
+.hold {
+  background-color: #485696;
+}
+
+.hover {
+  background-color: #5659af;
+}
+
+.invisible {
+  display: none;
+}
+
+//Styling for the reading list
+.rl-container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "enter-group enter-group reading-list reading-list reading-list reading-list"
+    "enter-group enter-group reading-list reading-list reading-list reading-list"
+    "enter-group enter-group reading-list reading-list reading-list reading-list"
+    "enter-group enter-group reading-list reading-list reading-list reading-list"
+    "enter-group enter-group reading-list reading-list reading-list reading-list"; 
+}
+.enter-group { 
+  grid-area: enter-group; 
+  max-width: 300px;
+  margin: 2rem 0 0 0;
+
+}
+
+.confirmgroup {
+  background-color: #5659af;
+  color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  border: none;
+  margin-top: 1rem;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25) ;
+  opacity: 60%;
+  cursor: pointer;
+  transition: 0.05s ease-in-out;
+
+}
+
+.confirmgroup:hover{
+  opacity: 100%;
+}
+
+.r-list { 
+  grid-area: reading-list; 
+}
+
+.example-group {
+  background-color: #B6DDDA;
+  border-radius: 25px;
+  border:none;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25) ;
+  color: #485696;
+  margin-top: 2rem;
+  padding: 2rem;
+}
+
+#group-form {
+  background-color: #485696;
+  color: white;
+  padding: 3rem;
+}
+
+.example-url {
+  margin-top: 1rem;
+  background-color: #5659af;
+  color: white;
+  padding: 1rem;
+}
+
+.refnamefield {
+  background-color: #485696;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25) ;
+
+}
+
+.readinglistheading {
+  color: #485696;
+}
+
+.input-refname {
+  background-color: #485696;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25) ;
+
+}
+
+.input-url {
+  background-color: #485696;
+  color: white;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25) ;
+}
+
+.refurlfield {
+  background-color: #485696;
+  color: white;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25) ;
+}
+
+.confirmref {
+  background-color: white;
+  color: #2F375D;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25) ;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  opacity: 60%;
+  cursor: pointer;
+}
+
+.confirmref:hover {
+  opacity: 100%;
+}
+
+.refurlfield::placeholder {
+  color: white;
+}
+
+.refnamefield::placeholder {
+  color: white;
+}
+
+
+
+.refadded {
+  margin-top: 1rem;
+  background-color: #5659af;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25);
+}
+
+.urladded {
+  font-weight: 100;
+  color: white;
+}
+
+.delete {
+  background-color: white;
+  border: none;
+  box-shadow: 0.0px 8.0px 16.0px hsl(0deg 0% 0% / 0.25) ;
+  padding: 0.75rem;
+  border-radius: 10px;
+  opacity: 60%;
+  cursor: pointer;
+  transition: 0.05s ease-in-out;
+  margin-top: 0.5rem;
+}
+
+.delete:hover{
+  opacity: 100%;
+}
+
+.music-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.song-details {
+  padding: 2rem;
+  background-color: #6D72E6;
+  color: white;
+}
+
+.single-task {
+  margin-bottom: 0.75rem;
+}
+
+@media screen and (max-width: 600px) {
+
+ 
+.container {
+      display: grid; 
+      grid-template-columns: 1fr; 
+      grid-template-rows: 0.2fr 1fr 1.8fr 0.2fr; 
+      gap: 0px 0px; 
+      grid-template-areas: 
+        "Welcome"
+        "Quick-Access"
+        "Task-List"
+        "Music"; 
+    }
+
+    
+
+    .app-container {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .stopwatch-button {
+      margin-bottom: 1rem;
+    }
+
+    .quick-access h3{
+      display: none;
+    }
+  .NAV {
+    display: none;
+  }
+
+  .quick-access {
+    display: flex;
+
+  }
+
+  .music {
+   margin-top: 2rem;
+  }
+
+  .k-board {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .kanbandoccontainer {
+    text-align: center;
+  }
+
+  .draggable {
+
+  padding: 1.5rem;
+  border-radius: 20px;
+  font-size: 12px;
+  cursor: move;
+  margin-bottom: 1rem;
+  }
+
+  .stopwatch-container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+.content-wrapper h1, p {
+  color: #485696;
+}
+
+.readinglistheading {
+  text-align: center;
+}
+.rl-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.refurlfield{
+  margin-left: 0em;
+  margin-top: 0.5rem;
+
+}
+
+.enter-group {
+  text-align: center;
+  margin-left: 3.5rem;
+
+}
+
+.urladded {
+  color: white;
+}
+}

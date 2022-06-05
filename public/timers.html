@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudBud - Timers</title>
+    <link rel="stylesheet" href="scss/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+
+<body>
+    <!-- Document wrapper for CSS -->
+<div class="doc-wrapper">
+<!-- Content wrapper for both timers for further CSS formatting -->
+<div class="content-wrapper">
+    <div class="timer-wrapper">
+    <div class="heading-tag"> <h1>Timers</h1>
+        <p>Choose between a <strong>Pomodoro</strong> timer or <strong>stopwatch</strong></p>
+
+        <!-- Stopwatch -->
+    <section id="Stopwatch">
+
+
+        <div class="stopwatch-container">
+         <h4>Need a <strong>stopwatch?</strong></h4>
+
+          
+         <!-- The timer is split into different spans as we want to customise each one in JS -->
+          <div id="default-time">
+            <span class="hours">00</span>
+            <span class="colon">:</span>
+            <span class="minutes">00</span>
+            <span class="colon">:</span>
+            <span class="seconds">00</span>
+            <span class="colon">:</span>
+            <span class="mill-sec">00</span>
+            </div>
+
+            <!-- Buttons to control the stopwatch -->
+          <div class="actions">
+              <button id="swstart">Start</button>
+              <button id="swpause">Pause</button>
+              <button id="swrestart">Restart</button>
+          </div>
+        </div>
+    </section>
+ <!-- Pomodoro Timer -->
+    <section id="Pomodoro">
+        <div id="pomo-container">
+            <h4 class="pomo-heading">Ready to study with the <strong>Pomodoro timer?</strong></h4>
+
+    <!-- Labels to show if the user is studying or on break -->
+        <div class="pomo-options">
+            <p id="study-label">Study</p>
+            <p id="break-label">Break</p>
+        </div>
+
+             <!-- The timer is split into different spans as we want to customise each one in JS -->
+
+      <div id="clocks">
+          <div id="study-clock">
+              <div id="study-min">00</div>
+              <div id="timer-semicolon">:</div>
+              <div id="study-secs">05</div>
+          </div>
+
+          <div id="break-clock">
+            <div id="break-min">05</div>
+            <div id="timer-semicolon">:</div>
+            <div id="break-secs">00</div>
+        </div>
+    </div>
+    
+    <!-- Buttons to control the Pomodoro timer -->
+          <div class="pomo-actions">
+            <button id="pomo-start">Study</button>
+            <button id="pomo-pause">Pause</button>
+            <button id="pomo-reset">Reset</button>
+        </div> 
+        </section>
+
+        
+        
+
+
+         
+
+
+
+
+
+
+
+
+          <!---
+<h5>Select how long you want your sessions to be (in minutes)</h5>
+          <div id="custom-time">
+           <div class="updateText">
+               <input type="text" id="textValue" value="">
+           </div>
+              <div class="slider-container">
+              <input type="range" class="slider" value = "1" id="slider-control" min="1" max="60" onChange="updateTime(this.value)"
+              onMouseMove="updateTime(this.value)" readonly="readonly">
+              </div>
+          </div>
+          <button id="confirm-time" >Confirm</button>
+        -->
+ 
+
+       
+
+
+
+
+    </section>
+</div>
+
+    <!---Declared JS file here as I had an error popping up when declaring it in the <head>-->
+    <script type = "text/javascript" src="timers.js"></script>
+</div>
+</div>
+<script type = "text/javascript" src="pomodoro.js"></script>
+<script src="music.js"></script>
+
+</body>
+</html>

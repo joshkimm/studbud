@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studbud - Kanban Board</title>
+  <link rel="stylesheet" href="scss/main.scss">
+</head>
+
+
+<body>
+  <!-- Headings -->
+  <h1 class="managetaskheading">Manage your tasks</h1>
+  <h3 class="tasklistheading">Task List</h3>
+
+  <!-- Task container for CSS -->
+  <div class="task-container">
+    <!-- Task element that was copied from index.html -->
+    <form id="task-form">
+      <input type="text" name="text" id="textinput" placeholder="What's on today" required>
+      <h5>PRIORITY</h5>
+      <select name="priority" id="priorityInput">
+        <option value="">Select one</option>
+        <option value="Low">Low (Green)</option>
+        <option value="Medium">Medium (Blue)</option>
+        <option value="High">High (Yellow)</option>
+        <option value="Urgent">Urgent (Red)</option>
+      </select>
+
+      <div class="task-list-divider">
+        <div class="due-date-divider">
+          <h5>DUE DATE</h5>
+          <input type="date" id="inputduedate">
+        </div>
+
+        <div class="completion-time-divider">
+          <h5>COMPLETION DATE</h5>
+          <input type="date" id="inputtime">
+        </div>
+
+        <div class="estimated-time">
+          <h5>ESTIMATED MIN TO COMPLETE</h5>
+          <input type="number" id="inputcomplete">
+        </div>
+      </div>
+      <button id="submitform" type="submit">Confirm</button>
+    </form>
+
+    <div class="tasklist-container">
+      <hr class="solid">
+      <h3>Current Tasks</h3>
+
+      <div id="tasklist">
+        <ul>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Kanban board -->
+  <div class="kanbandoccontainer">
+    <h3 class="kanbanheading">Kanban Board</h3>
+    <p>Add a column to start adding tasks!</p>
+    <!-- User inputs task name using text input -->
+  <input type="text" class="inputkanban"id="inputkanbantext" placeholder="Enter task name">
+  <!-- User adds a task to the first column 'In Progress' -->
+  <button class="taskbtn" id="create-k-task">Add Task</button>
+  <!-- User adds a column next to the 'Completed' -->
+  <button class="colbtn" id="col-button">Add Column</button>
+
+  <!-- Drag and drop method taught from 
+Traversy Media: https://www.youtube.com/watch?v=C22hQKE_32c -->
+
+<!-- Div container for kanban board -->
+  <div id="k-board" class="k-board">
+    <div class="k-container">
+      <h3>To Complete</h3>
+      <!-- "draggable=true" allows for the <p> element to be draggable across the page -->
+        <!-- Example <p> element/task element -->
+      <p class="draggable" draggable="true">Example</p>
+    </div>
+    <div class="k-container">
+      <h3>In Progress</h3>
+      
+
+    </div>
+    <div class="k-container">
+      <h3>Completed</h3>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+
+<script src="tasklist.js" type="module"></script>
+<script src="kanban.js" type="module"></script>
+
+</html>
